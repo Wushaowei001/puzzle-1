@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GCHQ Challenge Based Game</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/picross.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="controls">
+				<h1 class="title">
+					GCHQ Challenge Based Game
+				</h1>
+				<div class="control-group">
+					<h3>Progress</h3>
+					<span id="progress">0.0%</span>
+					<div class="custom"></div>
+					<h3>Mistakes</h3>
+					<span id="mistakes">0</span>
+				</div>
+				<div class="control-group">
+					<h3>Select Level</h3>
+					<div class="control-section">
+						
+					</div>
+					<select id="dimensions">
+						<option value="5x5">Level 1</option>
+						<option value="10x5">Level 2</option>
+						<option value="10x10">Level 3</option>
+						<option value="15x10">Level 4</option>
+						<option value="15x15">Level 5</option>
+						<option value="20x15">Level 6</option>
+						<option value="20x20">Level 7</option>
+						<option value="25x20">Level 8</option>
+						<option value="25x25">Level 9</option>
+						<option value="30x25">Level 10</option>
+						<option value="30x30">Level 11</option>
+					</select>
+                   
+                    <div class="control-section">
+
+                    </div>
+                    <button id="new">Start &raquo;</button>
+				</div>
+				<div class="control-group">
+                    <h3>Seed Information</h3>
+					<div class="custom">
+						<h5>Current Seed</h5>
+						<input type="text" id="seed" readonly="readonly" />
+						<h5>Custom Seeds</h5>
+						<form id="customForm">
+							<input type="text" id="customSeed" />
+							<button type="submit" id="customGame">Custom Game</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="puzzle">
+              
+            </div>
+
+
+		</div>
+
+        <div class="footer">
+            <h4>
+                Click tiles to reveal, right click to mark as empty. Drag to select multiple at once.
+                On touch capable devices: tap to reveal, tap and hold to mark as empty.
+            </h4>
+
+            <br />
+  
+			Designed and written by <a href="http://www.twitter.com/am_entrepreneur">Andrew Martin</a>.<br/>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="js/underscore.js"></script>
+		<script type="text/javascript" src="js/backbone.js"></script>
+		<script type="text/javascript" src="js/seedrandom.js"></script>
+		<script type="text/javascript" src="js/picross.js"></script>
+	</body>
+</html>
